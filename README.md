@@ -11,5 +11,6 @@ Todo: install packages
 run the example script:
 
 ```sh
-python app/my_script.py
+python -m app.my_script
 ```
+
