@@ -33,3 +33,7 @@ Run the unemployment report:
 ```sh
 python -m app.unemployment_report
 ```
+
+```sh
+python -m app.stocks_report
+```
