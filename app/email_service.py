@@ -16,8 +16,8 @@ from sendgrid.helpers.mail import Mail
 
 # HELPER FUNCTION:
 
-def send_email_with_sendgrid(recipient_address=SENDGRID_SENDER_ADDRESS,
-                             subject="[Shopping Cart App] Testing 123",
+def send_email_with_sendgrid(recipient_address=input('Type Email of Recipient: '),
+                             subject="whats up?",
                              html_content="<p>Hello World</p>"
                             ):
     """Sends an email to the given recipient address.
