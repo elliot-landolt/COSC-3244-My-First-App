@@ -24,6 +24,10 @@ Create a ".env" file and add contents like the following (using your own AlphaVa
 ```sh
 #this is the ".env" file
 ALPHAVANTAGE_API_KEY="..."
+
+# optionally:
+SENDGRID_API_KEY="..."
+SENDGRID_SENDER_ADDRESS="..."
 ```
 
 ## Usage
@@ -34,6 +38,12 @@ Run the unemployment report:
 python -m app.unemployment_report
 ```
 
+Run the stocks report:
 ```sh
 python -m app.stocks_report
+```
+
+Run the email service:
+```sh
+python -m app.email_service
 ```
