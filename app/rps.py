@@ -2,17 +2,14 @@
 
 from random import choice
 
-
 VALID_OPTIONS = ["rock", "paper", "scissors"]
 
 USER_WINS_MESSAGE = "USER WINS"
 COMPUTER_WINS_MESSAGE = "COMPUTER WINS"
 TIE_GAME_MESSAGE = "TIE GAME"
 
-
 def generate_computer_choice():
     return choice(VALID_OPTIONS)
-
 
 def determine_outcome(u, c):
     """
@@ -50,8 +47,6 @@ def determine_outcome(u, c):
     }
     outcome = winners[u][c]
     return outcome
-
-
 
 if __name__ == "__main__":
 
