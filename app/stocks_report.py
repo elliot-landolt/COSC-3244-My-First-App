@@ -1,9 +1,5 @@
-import os
 from pandas import read_csv
-from dotenv import load_dotenv
-
-load_dotenv()  # this looks into the .env for environment variables 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY", default="demo")
+from app.alpha import API_KEY
 
 symbol = input("Please input a symbol (e.g. 'NFLX'): ") or "NFLX"
 print("SYMBOL:", symbol)
