@@ -1,6 +1,7 @@
 from pandas import read_csv
 from app.alpha import API_KEY
 from plotly.express import line
+from app.email_service import send_email_with_sendgrid
 
 def fetch_stocks_csv(symbol):
     print("SYMBOL:", symbol)
@@ -39,3 +40,6 @@ if __name__ == "__main__":
                 title=f"Stock Prices ({symbol})",
             labels= {"x": "Date", "y": "Stock Price ($)"})
     fig.show()
+    # send email
+    latest_price = first_row['adjusted_close']
+    send_email_with_sendgrid(subject="Stocks Report", html_content=f"Latest price for {symbol} is {latest_price}")
