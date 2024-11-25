@@ -42,9 +42,10 @@
     {% set nav_links = [
         ('/about', 'about', 'About'),
         ('/hello', 'hello', 'Hello'),
+        ('/stocks/form', 'stocks_form', 'Stocks Form'),
     ] -%}
     {% set active_page = active_page|default('home') -%}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <div class="container-fluid">
             <!--a class="navbar-brand" href="/">My Web App</a-->
             <a class="navbar-brand" href="/">
@@ -52,7 +53,7 @@
                     ICONS
                     https://icons.getbootstrap.com/
                 -->
-                <i class="bi-globe" style="font-size: 1.7rem; color: white;"></i>
+                <i class="bi-eyedropper" style="font-size: 1.7rem; color: white;"></i>
                 &nbsp;
                 My Web App
             </a>
@@ -91,8 +92,8 @@
 
         <footer style="margin-top:2em; margin-bottom:2em;">
         <hr>
-            &copy; Copyright 2023 Elliot Landolt |
-            <a href="https://github.com/elliot-landolt">Source</a>
+            &copy; Copyright 2024 | 
+            <a href="https://github.com/elliot-landolt" target="_blank" rel="noopener noreferrer">Elliot Landolt</a>
         </footer>
     </div>
 
