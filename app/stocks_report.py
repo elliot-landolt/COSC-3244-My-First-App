@@ -11,6 +11,9 @@ def fetch_stocks_csv(symbol):
     df = read_csv(request_url)
     return df
 
+def format_usd(my_price):
+    return f"${float(my_price):,.2f}"
+
 if __name__ == "__main__":
     symbol = input("Please input a symbol (e.g. 'NFLX'): ") or "NFLX"
     df = fetch_stocks_csv(symbol)
