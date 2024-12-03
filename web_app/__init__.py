@@ -5,6 +5,7 @@ from web_app.routes.home_routes import home_routes
 from web_app.routes.stocks_routes import stocks_routes
 from web_app.routes.unemployment_routes import unemployment_routes
 from web_app.routes.product_routes import product_routes
+from web_app.routes.drink_routes import drink_routes
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 
@@ -15,6 +16,7 @@ def create_app():
     app.register_blueprint(stocks_routes)
     app.register_blueprint(unemployment_routes)
     app.register_blueprint(product_routes)
+    app.register_blueprint(drink_routes)
     return app
 
 if __name__ == "__main__":
