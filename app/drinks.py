@@ -9,5 +9,5 @@ def get_drinks():
         # Parse the JSON response
         data = response.json()
         # Extract the drink names and thumbnail URLs
-        drinks = [{"name": drink["strDrink"], "thumbnail": drink["strDrinkThumb"]} for drink in data["drinks"]]
+        drinks = [{"name": drink["strDrink"], "thumbnail": drink["strDrinkThumb"]} for drink in data["drinks"][:20]]
         return drinks
